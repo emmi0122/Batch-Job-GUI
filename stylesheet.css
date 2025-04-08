@@ -9,3 +9,33 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
+.save-resize-print-symbols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.save-symbol {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resize-symbol {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.print-out-symbol {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.other-symbols {
+
+}
