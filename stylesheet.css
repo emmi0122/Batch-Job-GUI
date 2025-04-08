@@ -2,12 +2,18 @@ body {
     background-color: #363030;
 }
 
+
 header {
     background-color: darkgreen;
     padding: 1em;
 
     display: flex;
     justify-content: space-between;
+
+    img {
+        width: 2em;
+    }
+
 }
 
 .save-resize-print-symbols {
@@ -37,5 +43,6 @@ header {
 }
 
 .other-symbols {
-
+    display: flex;
+    align-items: center;
 }
