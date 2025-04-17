@@ -154,7 +154,7 @@ header {
     margin-left: 15rem;
     margin-bottom: 1rem;
     display: flex;
-    justify-content:;
+    justify-content: stretch;
     align-items: baseline;
     
 }
@@ -184,6 +184,11 @@ margin-right: 1em;
     width: 20px; 
 }
 
+#rating{
+    margin-left: 4.7rem;
+    margin-right: 8rem;
+}
+
 
 
 .edit-image{
@@ -192,7 +197,6 @@ margin-right: 1em;
     border: solid;
     border-color: #363030;
     border-radius: 15px;
-    margin-left:5rem;
     display:flex;
     justify-content:space-between;
     
