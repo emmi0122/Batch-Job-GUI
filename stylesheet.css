@@ -64,11 +64,12 @@ header {
 
 #main-area{
     background-color: #6E6E6E;
-    width: 50rem;
+    height:auto;
+    width: 55rem;
     display: grid;
     justify-content: space-evenly;
     align-items: flex-end;
-    padding-left: 2rem;
+    
     
 }
 
@@ -76,45 +77,48 @@ header {
     margin-left: 15rem;
     margin-bottom: 1rem;
     display: flex;
-    justify-content:stretch;
+    justify-content:;
     align-items: baseline;
     
 }
 
 
 
-.rating{
-   
-}
+
 
 
 .zoom{
-padding-top: 1rem;
-height: 20px;
-width: 20px;
+padding-top: 0.8rem;
+height: 15px;
+width: 15px;
 margin-left: 1rem;
-margin-right: 1rem;
+margin-right: 1em;
 }
 
-/* 
+
 #zoomPercent{
+    font-size: small;
+    height: auto;
     margin-left: 2rem;
     margin-right: 2rem;
-} */
+}
 
 .star{
     width: 20px; 
 }
+
+
 
 .edit-image{
     background-color: #363030;
     color: white;
     border: solid;
     border-color: #363030;
-    border-radius: 9px;
-    margin-left:6rem;
+    border-radius: 15px;
+    margin-left:5rem;
     display:flex;
     justify-content:space-between;
+    
 }
 
 #big-template{
