@@ -213,3 +213,32 @@ position: center;
 
 }
 
+#toolbar{
+    font-size:0.8rem;
+    display: flex;
+    color: white;
+    background-color: #363030;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+
+
+    
+}
+.tool-img{
+
+    position:relative;
+    top: 0.3rem;
+    margin-left: 0.3rem;
+    width: 20px;
+    ;
+    
+    
+}
+
+
+
+
