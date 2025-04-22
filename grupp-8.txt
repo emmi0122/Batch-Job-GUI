@@ -1,0 +1,10 @@
+Grupp 8 - Medlemmar:
+- Emma Sol Andersdóttir
+- Johanna Högberg
+- Sarwat Ghalib
+- Emilia Jarleback
+- Viggo Nielsen
+
+Projekt 1:
+GitHub repo: https://github.com/emmi0122/Batch-Job-GUI.git
+Webbsida: https://batch-job-gui.netlify.app/
