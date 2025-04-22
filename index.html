@@ -25,9 +25,6 @@
                 <img src="Images/printer.png" alt="printout symbol">
                 <div class="skriv-ut">Skriv ut</div>
             </div>
-            <img src="Images\save-icon.png" alt="Save symbol">
-            <img src="Images/resize-image.png" alt="Resize symbol">
-            <img src="Images/print-out-image.png" alt="printout symbol">
         </div>
 
         <div class="other-symbols">
@@ -53,129 +50,171 @@
                             <img src="Images\star.png" alt="star-icon" class="star">
                             <img src="Images\star.png" alt="star-icon" class="star">
                         </div>
+
                         <div class="edit-image">
                             <img src="Images/zoom-out.png" class="zoom" alt="Zoom out symbol">
-                            <p id="zoomPercent">100%</p>
+                            <p id="zoom-percent">100%</p>
                             <img src="Images/zoom-in.png" class="zoom" alt="Zoom in symbol">
                         </div>
                     </div>
-
                 </div>
+
                 <div id="toolbar">
                     <div>
                         Beskär
                         <img src="Images/crop.png" alt="crop icon" class="tool-img">
-
                     </div>
-                    <div>
 
+                    <div>
                         Rotera
                         <img src="Images/rotate.png" alt="rotate icon" class="tool-img">
-
                     </div>
+
                     <div>
                         Horisontell spegelvänd
                         <img src="Images/flip (1).png" alt="flip icon" class="tool-img">
-
                     </div>
+
                     <div>
                         Verikal spegelvänd
                         <img src="Images/vertical-flip.png" alt="vert flip icon" class="tool-img">
-
                     </div>
+
                     <div>
                         Justera
                         <img src="Images/sliders.png" alt="slider icon" class="tool-img">
-
                     </div>
+
                     <div>
                         Ram
                         <img src="Images/square.png" alt="border icon" class="tool-img">
                     </div>
-
-
-
-
-
-                </div>
-
-            </div>
-
-
-
-            <div class="pick-box">
-                <div class="collection-header">
-                    <div class="collection-name">Kollektionsnamn</div>
-                    <div>
-                        <button class="button" id="add-to-collection">
-                            <span class="plus">+</span>
-                            Lägg till foto i kollektion</button>
-                    </div>
-                </div>
-
-                <div class="templates-container">
-                    <img src="Images/template-img.png" alt="Template symbol">
-                    <img src="Images/template-img.png" alt="Template symbol">
-                    <img src="Images/template-img.png" alt="Template symbol">
-                    <img src="Images/template-img.png" alt="Template symbol">
-                    <img src="Images/template-img.png" alt="Template symbol">
-                    <img src="Images/template-img.png" alt="Template symbol">
-                    <img src="Images/template-img.png" alt="Template symbol">
-                    <img src="Images/template-img.png" alt="Template symbol">
-                    <img src="Images/template-img.png" alt="Template symbol">
-                </div>
-
-                <div class="collection-footer">
-                    <div class="grid-templates">
-                        <img src="Images/two.png" alt="Grid template for 2 grids">
-                        <img src="Images/squares.png" alt="Grid template for 4 grids">
-                        <img src="Images/layout.png" alt="Grid template for 4 grids with layout">
-                        <div>278 foton</div>
-                    </div>
-
-                    <div class="bin">
-                        <img src="Images/bin.png" alt="Bin symbol">
-                    </div>
                 </div>
             </div>
 
+            <div class="side-panel">
+                <div class="pick-box">
+                    <div class="collection-header">
+                        <div>Kollektionsnamn</div>
+                        <div>
+                            <button class="button" id="add-to-collection-photo">
+                                <span class="plus">+</span>
+                                Lägg till foto i kollektion
+                            </button>
+                        </div>
+                    </div>
 
-            <div class="collections">
-                <img src="Images/sort.png" alt="Sort images symbol">
+                    <div class="templates-container">
+                        <img src="Images/template-img.png" class="selected-template" alt="Selected template image">
+                        <img src="Images/template-img.png" alt="Template symbol">
+                        <img src="Images/template-img.png" alt="Template symbol">
+                        <img src="Images/template-img.png" alt="Template symbol">
+                        <img src="Images/template-img.png" alt="Template symbol">
+                        <img src="Images/template-img.png" alt="Template symbol">
+                        <img src="Images/template-img.png" alt="Template symbol">
+                        <img src="Images/template-img.png" alt="Template symbol">
+                        <img src="Images/template-img.png" alt="Template symbol">
+                    </div>
 
-                <div class="collections-symbols">
-                    <img src="Images/storage.png" alt="Storage symbol">
-                    <img src="Images/storage.png" alt="Storage symbol">
-                    <img src="Images/storage.png" alt="Storage symbol">
-                    <img src="Images/storage.png" alt="Storage symbol">
-                    <img src="Images/storage.png" alt="Storage symbol">
-                    <img src="Images/storage.png" alt="Storage symbol">
-                    <img src="Images/storage.png" alt="Storage symbol">
-                    <img src="Images/storage.png" alt="Storage symbol">
-                    <img src="Images/storage.png" alt="Storage symbol">
-                    <img src="Images/storage.png" alt="Storage symbol">
+                    <div class="collection-footer">
+                        <div class="grid-templates">
+                            <img src="Images/two.png" alt="Grid template for 2 grids">
+                            <img src="Images/squares.png" alt="Grid template for 4 grids">
+                            <img src="Images/layout.png" alt="Grid template for 4 grids with layout">
+                            <div>278 foton</div>
+                        </div>
+
+                        <div class="bin">
+                            <div>Ta bort</div>
+                            <img src="Images/bin.png" alt="Bin symbol">
+                        </div>
+                    </div>
                 </div>
 
-                <div class="bin">
-                    <img src="Images/bin.png" alt="Bin symbol">
+                <div class="collections">
+                    <div class="collection-header">
+                        <div>Kollektioner</div>
+                        <div>
+                            <button class="button" id="add-to-collection">
+                                <span class="plus">+</span>
+                                Lägg till kollektion
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="sort-and-search">
+                        <div class="sort">
+                            <div>Sortera efter</div>
+                            <img src="Images/sort.png" alt="Sort images symbol">
+                        </div>
+
+                        <div class="search-bar">
+                            <input type="text" placeholder="Sök...">
+                        </div>
+                    </div>
+
+                    <div class="collections-symbols">
+                        <div class="storage">
+                            <img src="Images/storage.png" alt="Storage symbol">
+                            name
+                        </div>
+
+                        <div class="storage">
+                            <img src="Images/storage.png" alt="Storage symbol">
+                            name
+                        </div>
+
+                        <div class="storage">
+                            <img src="Images/storage.png" alt="Storage symbol">
+                            name
+                        </div>
+
+                        <div class="storage">
+                            <img src="Images/storage.png" alt="Storage symbol">
+                            name
+                        </div>
+
+                        <div class="storage">
+                            <img src="Images/storage.png" alt="Storage symbol">
+                            name
+                        </div>
+
+                        <div class="storage">
+                            <img src="Images/storage.png" alt="Storage symbol">
+                            name
+                        </div>
+
+                        <div class="storage">
+                            <img src="Images/storage.png" alt="Storage symbol">
+                            name
+                        </div>
+
+                        <div class="storage">
+                            <img src="Images/storage.png" alt="Storage symbol">
+                            name
+                        </div>
+
+                        <div class="storage">
+                            <img src="Images/storage.png" alt="Storage symbol">
+                            name
+                        </div>
+
+                        <div class="storage">
+                            <img src="Images/storage.png" alt="Storage symbol">
+                            name
+                        </div>
+                    </div>
+
+                    <div class="footer">
+                        <div class="number-of-collections">34 Kollektioner</div>
+                        <div class="bin">
+                            <div>Ta bort</div>
+                            <img src="Images/bin.png" alt="Bin symbol">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="edit-symbols">
-            <img src="Images/crop.png" alt="Crop image symbol">
-            <img src="Images/rotate.png" alt="Rotate image symbol">
-            <img src="Images/flip (1).png" alt="Horisontel flip symbol">
-            <img src="Images/vertical-flip.png" alt="Flip image symbol">
-            <img src="Images/sliders.png" alt="Sliders symbol">
-            <img src="Images/square.png" alt="Border symbol">
         </div>
     </main>
-
-    <footer>
-
-    </footer>
-
 </body>
-
 </html>

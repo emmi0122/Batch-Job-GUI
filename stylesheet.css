@@ -1,26 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: #363030;
-    margin: 0;
 }
 
 header {
-    padding: 2em;
-    padding-right: 3.5em;
+    padding: 0.5rem 1rem;
+    align-items: center;
 
     display: flex;
     justify-content: space-between;
 
     img {
-        width: 2em;
+        width: 2rem;
     }
 }
 
 .save-resize-print-symbols {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
     font-size: smaller;
-    gap: 0.5em;
+    gap: 2rem;
 }
 
 .save-symbol {
@@ -30,7 +35,7 @@ header {
     align-items: center;
 
     .spara {
-        margin-top: 0.6em;
+        margin-top: 0.6rem;
     }
 }
 
@@ -41,7 +46,7 @@ header {
     align-items: center;
 
     .bildstorlek {
-        margin-top: 0.6em;
+        margin-top: 0.6rem;
     }
 }
 
@@ -52,19 +57,31 @@ header {
     align-items: center;
 
     .skriv-ut {
-        margin-top: 0.6em;
+        margin-top: 0.6rem;
     }
 }
 
 .other-symbols {
     display: flex;
     align-items: center;
-    gap: 1.5em;
+    gap: 2rem;
+
+    img {
+        width: 1rem;
+    }
 }
 
 .main-container {
     display: grid;
-    grid-template-columns: 2fr 1.3fr
+    grid-template-columns: 2fr 1fr;
+}
+
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    border-right: none;
+    border-bottom: none;
 }
 
 .show-image {
@@ -74,12 +91,10 @@ header {
 .pick-box {
     color: white;
     font-size: medium;
-    border: solid black;
-    border-right: none;
 }
 
 .collection-header {
-    padding: 1.5em;
+    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,158 +102,216 @@ header {
 
 .button {
     background-color: white;
-    border-radius: 2em;
-    padding: 0.7em;
+    border-radius: 2rem;
+    padding: 0.7rem;
     line-height: 0.5;
 
     display: inline-flex;
-    gap: 0.7em;
-    font-size: 14px;
+    gap: 0.7rem;
+    font-size: 0.8rem;
     align-items: center;
 }
 
 .plus {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+}
+
+.selected-template {
+    border: 3px solid #0074D9;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
 }
 
 .templates-container {
-    padding: 2em;
+    padding: 2rem;
     padding-top: 0;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
-    row-gap: 1.5em;
-    column-gap: 3em;
+    row-gap: 1.5rem;
+    column-gap: 3rem;
 
     img {
-        width: 5em;
+        width: 5rem;
     }
 }
 
 .collection-footer {
+    color: #7b6c6c;
     display: flex;
     justify-content: space-between;
 
-    padding: 1em;
+    border-bottom: solid black;
+    padding: 2rem;
     padding-top: 0;
 
     img {
-        width: 1.5em;
+        width: 1.5rem;
     }
+}
+
+.bin {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .grid-templates {
     display: flex;
     align-items: center;
-    gap: 0.5em;
+    gap: 0.5rem;
 }
 
-.collections {
-    background-color: palegreen;
-}
-
-#main-area{
+#main-area {
     background-color: #6E6E6E;
-    height:auto;
+    height: auto;
     width: 55rem;
     display: grid;
     justify-content: space-evenly;
     align-items: flex-end;
-    
-    
 }
 
-#bottom-of-main-area{
+#bottom-of-main-area {
     margin-left: 15rem;
     margin-bottom: 1rem;
     display: flex;
     justify-content: stretch;
     align-items: baseline;
-    
 }
 
-
-
-
-
-
-.zoom{
-padding-top: 0.8rem;
-height: 15px;
-width: 15px;
-margin-left: 1rem;
-margin-right: 1em;
+.zoom {
+    height: 15px;
+    width: 15px;
+    margin-left: 1rem;
+    margin-right: 1em;
 }
 
-
-#zoomPercent{
+#zoom-percent {
     font-size: small;
-    height: auto;
+    padding: 0.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
 
-.star{
-    width: 20px; 
+.star {
+    width: 20px;
 }
 
-#rating{
+#rating {
     margin-left: 4.7rem;
     margin-right: 8rem;
 }
 
-
-
-.edit-image{
+.edit-image {
     background-color: #363030;
     color: white;
     border: solid;
     border-color: #363030;
     border-radius: 15px;
-    display:flex;
-    justify-content:space-between;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#big-template{
-width: 20rem;
-display: block;
-margin-left: auto;
-margin-right: auto;
-margin-top: 10rem;
-margin-bottom: 10rem;
-position: center;
-
+#big-template {
+    width: 25rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    position: center;
 }
 
-#toolbar{
-    font-size:0.8rem;
+.collections {
+    color: white;
+    font-size: medium;
+}
+
+.sort {
+    color: #7b6c6c;
+    display: flex;
+    gap: 0.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    img {
+        width: 1.5rem;
+    }
+}
+
+.sort-and-search {
+    color: #7b6c6c;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar input {
+    padding: 0.3rem 1rem;
+    border-radius: 0.7rem;
+    background: #d3d2d2;
+    font-size: 0.8rem;
+}
+
+.search-bar {
+    padding-right: 1.5rem;
+}
+
+.collections-symbols {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: smaller;
+    padding: 1.5rem;
+    padding-top: 0;
+
+    row-gap: 1.5rem;
+    column-gap: 2.5rem;
+}
+
+.storage {
+    color: #7b6c6c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 3rem;
+    }
+}
+
+.footer {
+    color: #7b6c6c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    img {
+        width: 1.5rem;
+    }
+}
+
+#toolbar {
+    font-size: 0.8rem;
     display: flex;
     color: white;
     background-color: #363030;
     align-items: baseline;
     justify-content: space-evenly;
+
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 2rem;
     padding-top: 1.5rem;
-
-
-    
 }
-.tool-img{
 
-    position:relative;
+.tool-img {
+    position: relative;
     top: 0.3rem;
     margin-left: 0.3rem;
     width: 20px;
-    ;
-    
-    
 }
-
-
-
-
